@@ -179,12 +179,13 @@ get_download_url() {
   local install_type=$1
   local version=$2
 
-  if [ "$install_type" = "version" ]
-  then
-    echo "http://www.erlang.org/download/otp_src_${version}.tar.gz"
-  else
-    echo "https://github.com/erlang/otp/archive/${version}.tar.gz"
-  fi
+#   if [ "$install_type" = "version" ]
+#   then
+#     echo "http://www.erlang.org/download/otp_src_${version}.tar.gz"
+#   else
+   #echo "https://github.com/erlang/otp/archive/${version}.tar.gz"
+   echo "https://codeload.github.com/erlang/otp/tar.gz/OTP-${version}"
+#   fi
 }
 
 
